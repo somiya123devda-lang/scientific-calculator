@@ -7,12 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="wrapper">
+
+  <!-- History Box -->
+  <div class="history-box">
+      <h2>History</h2>
+      <div id="historyList" class="history-list"></div>
+      <button id="clearHistory" class="clear-history-btn">Clear</button>
+  </div>
+
+  <!-- Calculator -->
   <div class="calculator">
-    <h2>Scientific Calculator</h2>
+    <h2>"Scientific Calculator"</h2>
     <input type="text" id="result" readonly>
 
     <div class="btns">
-    
       <button class="clear">C</button>
       <button class="operator">(</button>
       <button class="operator">)</button>
@@ -28,12 +38,10 @@
       <button class="function">x²</button>
       <button class="operator">-</button>
 
-
       <button class="number">7</button>
       <button class="number">8</button>
       <button class="number">9</button>
       <button class="operator">+</button>
-
 
       <button class="number">4</button>
       <button class="number">5</button>
@@ -49,9 +57,15 @@
       <button class="function">^</button>
       <button class="function">π</button>
       <button class="function">e</button>
+
+      <button class="decimal">/</button>
+      <button class="function">,</button>
+      <button class="function">ln</button>
     </div>
   </div>
 
-  <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

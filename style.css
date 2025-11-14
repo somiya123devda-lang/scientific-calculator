@@ -19,7 +19,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   padding: 20px;
-  width: 350px;
+  width: 500px;
   text-align: center;
 }
 
@@ -82,4 +82,52 @@ button:hover {
   grid-row: span 2;
 }
 
+.history-box {
+  width: 80%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.history-list {
+  margin-top: 10px;
+  background: rgba(255,255,255,0.1);
+  height: 500px;
+  border-radius: 8px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.history-item {
+  padding: 10px;
+  background: rgba(255,255,255,0.2);
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.clear-history-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: crimson;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
 
