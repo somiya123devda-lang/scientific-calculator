@@ -130,72 +130,54 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
-/* ======= RESPONSIVE DESIGN ======= */
-@media (max-width: 768px) {
-  
-  body {
-    height: auto;
-    padding: 20px 0;
-  }
+@media (max-width: 850px) {
 
   .wrapper {
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-    width: 100%;
   }
 
   .history-box {
-    width: 90%;
-    height: auto;
+    width: 95%;
+  }
+
+  .calculator {
+    width: 95%;
+  }
+
+  #result {
+    height: 60px;
+    font-size: 26px;
+  }
+
+  button {
+    padding: 20px;
+    font-size: 20px;
   }
 
   .history-list {
     height: 250px;
   }
+}
 
-  .calculator {
-    width: 90%;
-    padding: 15px;
+@media (max-width: 480px) {
+
+  button {
+    padding: 22px;
+    font-size: 22px;
   }
 
   .btns {
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 8px;
-  }
-
-  button {
-    padding: 18px;
-    font-size: 20px;
-    border-radius: 10px;
+    gap: 8px;
   }
 
   #result {
-    height: 55px;
-    font-size: 24px;
-  }
-}
-
-/* EXTRA SMALL DEVICES */
-@media (max-width: 480px) {
-
-  .btns {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  button {
-    padding: 20px;
-    font-size: 22px;
+    height: 65px;
+    font-size: 26px;
   }
 
   .history-list {
     height: 200px;
   }
-
-  #result {
-    font-size: 26px;
-    height: 60px;
-  }
 }
-
-
