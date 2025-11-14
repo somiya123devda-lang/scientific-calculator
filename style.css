@@ -11,7 +11,16 @@ body {
   padding: 20px;
 }
 
+/* WRAPPER FIX */
+.wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
+/* CALCULATOR BOX */
 .calculator {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
@@ -19,6 +28,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   padding: 20px;
   width: 500px;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -41,11 +51,13 @@ h2 {
   outline: none;
 }
 
+/* BUTTON GRID FIXED */
 .btns {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin-top: 20px;
+  width: 100%;
 }
 
 button {
@@ -57,6 +69,7 @@ button {
   color: white;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 100%;
 }
 
 button:hover {
@@ -64,6 +77,7 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* COLOR CODING */
 .clear {
   background: #e74c3c;
 }
@@ -81,8 +95,10 @@ button:hover {
   grid-row: span 2;
 }
 
+/* HISTORY BOX */
 .history-box {
-  width: 80%;
+  width: 380px;
+  max-width: 100%;
   background: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 10px;
@@ -116,12 +132,10 @@ button:hover {
   cursor: pointer;
 }
 
-.wrapper {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-}
+/* ---------------------- */
+/* RESPONSIVENESS FIXED   */
+/* ---------------------- */
+
 @media (max-width: 850px) {
 
   .wrapper {
@@ -131,10 +145,12 @@ button:hover {
 
   .history-box {
     width: 95%;
+    order: -1; /* history goes UP on mobile */
   }
 
   .calculator {
     width: 95%;
+    max-width: 95%;
   }
 
   #result {
@@ -143,7 +159,7 @@ button:hover {
   }
 
   button {
-    padding: 20px;
+    padding: 18px;
     font-size: 20px;
   }
 
@@ -154,14 +170,14 @@ button:hover {
 
 @media (max-width: 480px) {
 
-  button {
-    padding: 22px;
-    font-size: 22px;
-  }
-
   .btns {
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
+  }
+
+  button {
+    padding: 20px;
+    font-size: 20px;
   }
 
   #result {
@@ -170,6 +186,6 @@ button:hover {
   }
 
   .history-list {
-    height: 200px;
+    height: 180px;
   }
 }
