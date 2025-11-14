@@ -7,11 +7,10 @@
 
 body {
   background: radial-gradient(circle at top left, #160b48, #61559d);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
+
 
 .calculator {
   background: rgba(255, 255, 255, 0.1);
@@ -115,13 +114,6 @@ button:hover {
   color: white;
   border-radius: 6px;
   cursor: pointer;
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
 .wrapper {
